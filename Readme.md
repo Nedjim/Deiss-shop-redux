@@ -1,5 +1,6 @@
 # Deiss-Shop - Redux
 
+Lien du site: [https://deiss-shop.herokuapp.com/](https://deiss-shop.herokuapp.com/)
 ## Technologies
 - Node.js
 - Express

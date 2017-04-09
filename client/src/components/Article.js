@@ -3,9 +3,9 @@ import UpdateArticle            from './UpdateArticleForm';
 
 const Article = props => (
   <div className='article'>
-    <div onClick={() => props.selectArticle(props.index)} className='article-link'>
+    <div >
         <a onClick={() => props.removeArticle(props.index)}> ✖ </a>
-        <h3>{props.name}</h3>
+        <h3 onClick={() => props.selectArticle(props.index)} className='article-link'>{props.name}</h3>
     </div>
     <div className='price'>
         <span>{props.price} euros</span>

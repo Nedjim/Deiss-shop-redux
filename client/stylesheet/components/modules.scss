@@ -13,3 +13,11 @@ form {
         cursor: pointer;
     }
 }
+
+.article {
+        .article-link:hover {
+                cursor: pointer;
+                color: #EF9A9A;
+                font-size: 1.1rem;
+            }
+}
