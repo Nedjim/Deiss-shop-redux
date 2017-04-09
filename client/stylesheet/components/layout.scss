@@ -15,3 +15,27 @@ header {
         }
     }
 }
+
+.container {
+    height: 100vh;
+}
+
+.formulaires {
+    width: 25rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    form {
+        input {
+            width: 80%;
+            margin-bottom: 1rem;
+            padding: 0.4rem;
+            text-align: center;
+            border: none;
+        }
+    }
+}

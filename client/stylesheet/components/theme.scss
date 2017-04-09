@@ -1,10 +1,10 @@
 body {
-    background: #FAFAFA;
+    background: #E0E0E0;
     font-family: $font-lato;
 }
 
 header {
-    background: #757575;
+    background: rgba(126, 126, 126, 0.3);
     #logo {
         font-family: $font-spiral;
         font-size: 3rem;
@@ -19,4 +19,22 @@ header {
             }
         }
     }
+}
+
+.container {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulaires {
+    background: rgba(126, 126, 126, 0.3);
+    h3 {
+        color: white;
+        background: rgba(126, 126, 126, 0.6);
+    }
+   form {
+       input {
+           font-size: 0.7rem;
+       }
+   }
 }
