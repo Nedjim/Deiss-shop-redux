@@ -4,7 +4,7 @@ Lien du site: [https://deiss-shop.herokuapp.com/](https://deiss-shop.herokuapp.c
 ## Technologies
 - Node.js
 - Express
-- MongoDB
+- MongoDB / Mongolab
 - Mongolab
 - React.js / Redux
 - Webpack
