@@ -48,32 +48,36 @@ export default class AddArticleForm extends Component {
     return (
       <div id="add-article">
         <h3>Ajouter un article</h3>
-        <form onSubmit={this.addArticle}>
-          <input
-            type="text"
-            value={this.state.name}
-            onChange={this.onNameChange}
-            placeholder="Nom"
-          />
-          <input
-            type="text"
-            value={this.state.description}
-            onChange={this.onDescriptionChange}
-            placeholder="Description"
-          />
-          <input
-            type="text"
-            value={this.state.price}
-            onChange={this.onPriceChange}
-            placeholder="Prix (euros)"
-          />
-          <input
-            type="text"
-            value={this.state.image}
-            onChange={this.onImageChange}
-            placeholder="Image (url)"
-          />
-          <button type="submit">Ajouter un article</button>
+        <form method='post' onSubmit={this.addArticle} action='/admin/addArticle'>
+              <input
+                type="text"
+                value={this.state.name}
+                onChange={this.onNameChange}
+                name='name'
+                placeholder="Nom"
+              />
+              <input
+                type="text"
+                value={this.state.description}
+                onChange={this.onDescriptionChange}
+                name='description'
+                placeholder="Description"
+              />
+              <input
+                type="text"
+                value={this.state.price}
+                onChange={this.onPriceChange}
+                name='price'
+                placeholder="Prix (euros)"
+              />
+              <input
+                type="text"
+                value={this.state.image}
+                onChange={this.onImageChange}
+                name='image'
+                placeholder="Image (url)"
+              />
+              <button type="submit">Ajouter un article</button>
         </form>
       </div>
     );

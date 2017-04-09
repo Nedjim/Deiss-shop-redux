@@ -12,6 +12,7 @@ var mongoose          = require('mongoose');
 
 var configDB          = require('./server/config.js');
 var Auth              = require('./server/controllers/auth');
+var Article           = require('./server/controllers/article')
 
 var app               = express();
 
@@ -47,6 +48,9 @@ app.get('*', function (req, res){
 
 app.route('/auth')
   .post(Auth.post);
+
+app.route('/admin/addArticle')
+  .post(Article.post);
 
 app.listen(PORT, function(error) {
   if (error) {
