@@ -27,7 +27,7 @@ export default class CreateProfile extends React.Component {
                             <input type='password' placeholder='Confirmer le mot de passe' name='password' />
                         </div>
                         <div>
-                            <button type='submit'>Créer</button>
+                            <button type='submit'>Créer un compte</button>
                         </div>
                     </form>
                 </div>

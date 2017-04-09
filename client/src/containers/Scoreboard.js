@@ -3,10 +3,16 @@ import { bindActionCreators }           from 'redux';
 import { connect }                      from 'react-redux';
 import * as ArticleActionCreators       from '../actions/article';
 
+import Header                           from './Header';
 import HeaderArticle                    from '../components/HeaderArticle';
 import Article                          from '../components/Article';
 import AddArticleForm                   from '../components/AddArticleForm';
 import ArticleDetail                    from '../components/ArticleDetail';
+
+
+const backgroundStyle = {
+    backgroundImage: 'url(https://images.unsplash.com/photo-1464580148015-c844134b925f?dpr=1&auto=compress,format&fit=crop&w=767&h=494&q=80&cs=tinysrgb&crop=&bg=)'
+}
 
 class Scoreboard extends Component {
   static propTypes = {
@@ -40,7 +46,8 @@ class Scoreboard extends Component {
       />
     ));
     return (
-      <div>
+      <div id='scoreboard'style={backgroundStyle} className='container'>
+        <Header />
         <HeaderArticle articles={articles}/>
         <AddArticleForm addArticle={addArticle} />
         <div className="players">

@@ -37,5 +37,15 @@ header {
             text-align: center;
             border: none;
         }
+        button[type='submit']{
+            padding: 0.5rem;
+        }
+    }
+}
+#not-found {
+    .error {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 35vh;
     }
 }

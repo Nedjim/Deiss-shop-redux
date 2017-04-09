@@ -33,8 +33,23 @@ header {
         background: rgba(126, 126, 126, 0.6);
     }
    form {
-       input {
+       input{
            font-size: 0.7rem;
        }
+       button[type='submit']{
+           background: white;
+           font-size: 0.8rem;
+       }
    }
+}
+
+#not-found {
+    .error {
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+            color: white;
+            background: rgba(126, 126, 126, 0.6);
+        }
+    }
 }
