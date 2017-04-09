@@ -42,6 +42,6 @@ Le projet a été réalisé en deux parties:
   
 ### Améliorations
 - finir la gestion de la base de donnée depuis la partie client
-- sécuriser les données et le système d'authentification
+- sécuriser les données (bcrypt) et le système d'authentification (session)
 - gestion routes / requêtes HTTP sur Heroku
 - responsive
