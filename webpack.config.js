@@ -1,19 +1,31 @@
+var webpack           = require('webpack');
+var path              = require('path');
+
 module.exports = {
-  devtool: 'inline-sourcemap',
-  entry: './index.js',
-  output: {
-    filename: 'bundle.js'
-  },
+  entry: [
+    './client/index'
+  ],
   module: {
     loaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: [
-          'react-hot',
-          'babel'
-        ]
-      }
+      { test: /\.js?$/, loader: 'babel', exclude: /node_modules/ },
+      { test: /\.s?css$/, loader: 'style!css!sass' },
     ]
-  }
+  },
+  resolve: {
+    extensions: ['', '.js']
+  },
+  output: {
+    path: path.join(__dirname, '/dist'),
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  },
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ]
 };
