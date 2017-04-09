@@ -1,7 +1,7 @@
 import React        from 'react';
 import {Link}       from 'react-router';
 
-const Header = () => {
+const Header = (props) => {
     return(
         <header>
             <h1 id='logo'>Deiss Shop</h1>
@@ -27,6 +27,9 @@ const Header = () => {
                     </div>
                 </Link>
             </nav>
+            <div className='message'>
+                <span>{props.message}</span>
+            </div>
         </header>
     )
 }

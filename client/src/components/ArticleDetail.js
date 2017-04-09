@@ -4,7 +4,7 @@ import UpdateArticleForm        from './UpdateArticleForm';
 const ArticleDetail = ({ selectedArticle}) => {
   if(selectedArticle){
     return (
-      <div>
+      <div className='article-details'>
         <h3>{selectedArticle.name}</h3>
         <ul>
           <li>
@@ -18,20 +18,18 @@ const ArticleDetail = ({ selectedArticle}) => {
           <li>
             <img src={selectedArticle.image}/>
           </li>
-          <li>
-            <span>Created: </span> 
-            {selectedArticle.created}
-          </li>
-          <li>
-            <span>Updated: </span> 
-            {selectedArticle.updated}
-          </li>        
+          <div>
+            <span>Créer le: {selectedArticle.created} - </span> 
+            <span>Mise à jour le: {selectedArticle.updated}</span> 
+          </div>      
         </ul>
       </div>
     );
   }
   else {
-    return (<p>Cliquer sur un article pour avoir plus de détails</p>);
+    return (<div className='article-details'>
+                <p>Cliquer sur un article pour avoir plus de détails</p>
+            </div>);
   }
 };
 

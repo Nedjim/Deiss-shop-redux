@@ -53,3 +53,54 @@ header {
         }
     }
 }
+
+#scoreboard {
+    .content {
+        background: rgba(126, 126, 126, 0.8);
+    }
+    .header-articles {
+        h1 {
+             color: white;
+             font-size: 2.3rem;
+        }
+        .stats {
+            font-size: 1.5rem;
+            color: black;
+        }
+    }
+    #add-article{
+        border: 0.1rem solid grey;
+        padding: 1rem;
+        h3 {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        form {
+            input {
+                font-size: 0.8rem;
+                text-align: center;
+            }
+            button[type='submit']{
+                color: white;
+                background: #EF9A9A;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .article {
+        border: 0.1rem solid grey;
+        background: white;
+        .update-article {
+            input {
+                border: 0.1rem solid #E0E0E0;
+            }
+        }
+    }
+    .article-details {
+        background: white;
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+}

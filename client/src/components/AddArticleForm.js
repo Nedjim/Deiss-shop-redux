@@ -46,7 +46,8 @@ export default class AddArticleForm extends Component {
 
   render() {
     return (
-      <div>
+      <div id="add-article">
+        <h3>Ajouter un article</h3>
         <form onSubmit={this.addArticle}>
           <input
             type="text"
@@ -72,7 +73,7 @@ export default class AddArticleForm extends Component {
             onChange={this.onImageChange}
             placeholder="Image (url)"
           />
-          <input type="submit" value="Ajouter un article" />
+          <button type="submit">Ajouter un article</button>
         </form>
       </div>
     );

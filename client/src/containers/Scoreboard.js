@@ -46,17 +46,18 @@ class Scoreboard extends Component {
       />
     ));
     return (
-      <div id='scoreboard'style={backgroundStyle} className='container'>
-        <Header />
-        <HeaderArticle articles={articles}/>
-        <AddArticleForm addArticle={addArticle} />
-        <div className="players">
-          { articleComponents }
-        </div>
-        
-        <div className="player-detail">
-          <ArticleDetail selectedArticle={selectedArticle}/>
-        </div>
+      <div id='scoreboard' style={backgroundStyle} className='container'>
+            <Header message='User: Admin'/>
+            <div className='content'>
+                  <HeaderArticle articles={articles}/>
+                  <AddArticleForm addArticle={addArticle} />
+                  <div className='views'>
+                      <div className="articles">
+                        { articleComponents }
+                      </div>
+                      <ArticleDetail selectedArticle={selectedArticle}/>
+                  </div>
+            </div>
       </div>
     );
   }

@@ -1,12 +1,13 @@
 import React, { PropTypes }     from 'react';
-import Stats                    from './Stats';
 
 const HeaderArticle = props => {
   return (
     <div className="header-articles">
-      <Stats articles={props.articles} />
-      <h1>Session Admin</h1>
-      <h1>Gestion des articles</h1>
+        <h1>Gestion des articles</h1>
+        <div className='stats'>
+          <span>Nombre d'articles en ligne: </span>
+          <span>{props.articles.length}</span>
+        </div>
     </div>
   );
 };

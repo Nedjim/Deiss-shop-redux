@@ -1,20 +1,16 @@
 import React, { PropTypes }     from 'react';
-import Counter                  from './Counter';
 import UpdateArticle            from './UpdateArticleForm';
 
 const Article = props => (
-  <div>
-    <div onClick={() => props.selectArticle(props.index)}>
+  <div className='article'>
+    <div onClick={() => props.selectArticle(props.index)} className='article-link'>
         <a onClick={() => props.removeArticle(props.index)}> ✖ </a>
         <h3>{props.name}</h3>
     </div>
-
-    <div>
-        <Counter price={props.price} />
+    <div className='price'>
+        <span>{props.price} euros</span>
     </div>
-
     <UpdateArticle article={props} updateArticle={props.updateArticle}/>
-
   </div>
 );
 
