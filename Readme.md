@@ -41,7 +41,7 @@ Le projet a été réalisé en deux parties:
 - le repo actuel sur lequel j'ai préféré gérer la partie client avec redux avant d'ajouter la partie serveur (qui reprend un partie du travail que j'avais déjà effectué sur le premier repo).  
   
 ### Améliorations
-- finir la gestion de la base de donnée
+- finir la gestion de la base de donnée depuis la partie client
 - sécuriser les données et le système d'authentification
 - gestion routes / requêtes HTTP sur Heroku
 - responsive
