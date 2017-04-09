@@ -31,3 +31,6 @@ Mot de passe: admin
 
 ## Identification des autres utilisateurs
 Les utilisateurs peuvent se créer un compte et s'identifier avec leur pseudo et le mot de passe (enregistrer dans la basse de donnée)
+
+## Trello
+[https://trello.com/b/TjqRBvph/deiss-shop](https://trello.com/b/TjqRBvph/deiss-shop)
