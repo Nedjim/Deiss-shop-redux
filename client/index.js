@@ -11,6 +11,7 @@ import Home                               from './src/containers/Home';
 import Auth                               from './src/containers/Auth';
 import CreateProfile                      from './src/containers/CreateProfile';
 import NotFound                           from './src/containers/NotFound';
+import Boutique                           from './src/containers/Boutique';
 
 const store = createStore(
   ArticleReducer,
@@ -22,6 +23,7 @@ const router = (
     <Router history={browserHistory}>
       <Route path="/" component={Home} />
       <Route path='/auth' component={Auth} />
+      <Route path='/boutique' component={Boutique} />
       <Route path='/create' component={CreateProfile} />
       <Route path="/admin/articles" component={Scoreboard} />
       <Route path='*' component={NotFound} />

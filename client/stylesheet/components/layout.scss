@@ -1,0 +1,17 @@
+header {
+    padding: 1rem;
+    #logo {
+        width: 40%;
+    }
+    .navigation {
+        text-align: right;
+        .link {
+            display: inline-block;
+            padding: 1rem;
+            margin-right: 1rem;
+        }
+        .link:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,3 +1,22 @@
 body {
-    background: yellow;
+    background: #FAFAFA;
+    font-family: $font-lato;
+}
+
+header {
+    background: #757575;
+    #logo {
+        font-family: $font-spiral;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+    }
+    .navigation {
+        .link {
+            background: #E57373;
+            li {
+                color: white;
+            }
+        }
+    }
 }

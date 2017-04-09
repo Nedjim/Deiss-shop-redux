@@ -1,12 +1,12 @@
 import React        from 'react';
 import Header       from './Header';
 
-export default class CreateProfile extends React.Component {
+export default class Boutique extends React.Component {
     render(){
         return (
-            <div id='create-profile'>
+            <div id='boutique'>
                 <Header />
-                Creer un profile
+                Boutique
             </div>
         )
     }
