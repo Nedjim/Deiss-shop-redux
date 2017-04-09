@@ -34,3 +34,9 @@ Les utilisateurs peuvent se créer un compte et s'identifier avec leur pseudo et
 
 ## Trello
 [https://trello.com/b/TjqRBvph/deiss-shop](https://trello.com/b/TjqRBvph/deiss-shop)
+
+## Bilan
+Le projet a été réalisé en deux parties: 
+- un premier repo sur lequel je me suis focalisé sur la gestion de la base de donnée (notamment avec Postman) et le lien avec la partie client: [https://github.com/Nedjim/deiss-shop](https://github.com/Nedjim/deiss-shop)
+- le repo actuel sur lequel j'ai préféré gérer la partie client avec redux avant d'ajouter la partie serveur (qui reprend un partie du travail que j'avais déjà effectué sur le premier repo).  
+  
