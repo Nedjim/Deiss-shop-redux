@@ -12,7 +12,7 @@ export default class Auth extends React.Component {
                 <Header />
                 <div className='formulaires'>
                     <h3>IDENTIFICATION</h3>
-                    <form method="post">
+                    <form method="post" action='/auth'>
                         <div>
                             <input type='text' name='pseudo' placeholder='Pseudo' />
                         </div>

@@ -11,6 +11,8 @@ var mongoose          = require('mongoose');
 //var session           = require('express-session');
 
 var configDB          = require('./server/config.js');
+var Auth              = require('./server/controllers/auth');
+
 var app               = express();
 
 // using webpack-dev-server and middleware in development environment
@@ -32,10 +34,19 @@ mongoose.connect(configDB.dbUrl);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
+// Application 
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+//app.use(cookieParser());
+
+
 //Lien HTML
 app.get('*', function (req, res){
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 });
+
+app.route('/auth')
+  .post(Auth.post);
 
 app.listen(PORT, function(error) {
   if (error) {
